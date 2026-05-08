@@ -25,42 +25,45 @@ export const Atmosphere: React.FC = () => {
           </div>
 
           {/* Image Collage */}
-          <div className="flex-1 w-full grid grid-cols-2 gap-3 md:gap-4 h-[350px] sm:h-[450px] md:h-[500px]">
-            <div className="flex flex-col gap-3 md:gap-4 h-full">
-              <div className="relative w-full flex-[2] rounded-2xl overflow-hidden shadow-md">
-                <Image
-                  src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&q=80&w=800"
-                  alt="Personas trabajando con laptop en Lumbre Café"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative w-full flex-[1] rounded-2xl overflow-hidden shadow-md">
-                <Image
-                  src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=600"
-                  alt="Vapor subiendo de una taza de café caliente"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          <div className="flex-1 w-full grid grid-cols-2 grid-rows-3 gap-3 md:gap-4 h-[350px] sm:h-[450px] md:h-[500px]">
+            {/* Left Top (2/3) */}
+            <div className="relative w-full h-full col-start-1 col-end-2 row-start-1 row-end-3 rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&q=80&w=800"
+                alt="Personas trabajando con laptop en Lumbre Café"
+                fill
+                className="object-cover"
+              />
             </div>
-            <div className="flex flex-col gap-3 md:gap-4 pt-8 md:pt-12 h-full">
-              <div className="relative w-full flex-[1] rounded-2xl overflow-hidden shadow-md">
-                <Image
-                  src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600"
-                  alt="Barista preparando café de especialidad"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative w-full flex-[2] rounded-2xl overflow-hidden shadow-md">
-                <Image
-                  src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80&w=800"
-                  alt="Ambiente cálido y acogedor en la cafetería"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            
+            {/* Right Top (1/3) */}
+            <div className="relative w-full h-full col-start-2 col-end-3 row-start-1 row-end-2 rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600"
+                alt="Barista preparando café de especialidad"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Left Bottom (1/3) */}
+            <div className="relative w-full h-full col-start-1 col-end-2 row-start-3 row-end-4 rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=600"
+                alt="Vapor subiendo de una taza de café caliente"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Right Bottom (2/3) */}
+            <div className="relative w-full h-full col-start-2 col-end-3 row-start-2 row-end-4 rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80&w=800"
+                alt="Ambiente cálido y acogedor en la cafetería"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
