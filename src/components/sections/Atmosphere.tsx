@@ -25,9 +25,9 @@ export const Atmosphere: React.FC = () => {
           </div>
 
           {/* Image Collage */}
-          <div className="flex-1 w-full grid grid-cols-2 gap-4 h-[500px]">
-            <div className="flex flex-col gap-4">
-              <div className="relative w-full h-2/3 rounded-2xl overflow-hidden shadow-md">
+          <div className="flex-1 w-full grid grid-cols-2 gap-3 md:gap-4 h-[350px] sm:h-[450px] md:h-[500px]">
+            <div className="flex flex-col gap-3 md:gap-4 h-full">
+              <div className="relative w-full flex-[2] rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&q=80&w=800"
                   alt="Personas trabajando con laptop en Lumbre Café"
@@ -35,7 +35,7 @@ export const Atmosphere: React.FC = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative w-full h-1/3 rounded-2xl overflow-hidden shadow-md">
+              <div className="relative w-full flex-[1] rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&q=80&w=600"
                   alt="Vapor subiendo de una taza de café caliente"
@@ -44,8 +44,8 @@ export const Atmosphere: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-4 pt-12">
-              <div className="relative w-full h-1/3 rounded-2xl overflow-hidden shadow-md">
+            <div className="flex flex-col gap-3 md:gap-4 pt-8 md:pt-12 h-full">
+              <div className="relative w-full flex-[1] rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600"
                   alt="Barista preparando café de especialidad"
@@ -53,7 +53,7 @@ export const Atmosphere: React.FC = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative w-full h-2/3 rounded-2xl overflow-hidden shadow-md">
+              <div className="relative w-full flex-[2] rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80&w=800"
                   alt="Ambiente cálido y acogedor en la cafetería"
