@@ -25,7 +25,7 @@ export const Atmosphere: React.FC = () => {
           </div>
 
           {/* Image Collage */}
-          <div className="flex-1 w-full grid grid-cols-2 grid-rows-3 gap-3 md:gap-4 h-[350px] sm:h-[450px] md:h-[500px]">
+          <div className="w-full lg:w-1/2 shrink-0 grid grid-cols-2 grid-rows-3 gap-3 md:gap-4 min-h-[450px] lg:min-h-[550px]">
             {/* Left Top (2/3) */}
             <div className="relative w-full h-full col-start-1 col-end-2 row-start-1 row-end-3 rounded-2xl overflow-hidden shadow-md">
               <Image
